@@ -2,7 +2,7 @@
 
 ## Brand Identity
 Futuristic, bold, edgy, and accessible. High contrast.
-Dark base with electric accents. Feels like the future of finance.
+Light blue base with deep navy structure and electric yellow CTAs.
 Sharp, elegant edges — modern and confident, never bubbly or soft.
 
 ---
@@ -10,19 +10,21 @@ Sharp, elegant edges — modern and confident, never bubbly or soft.
 ## Color Palette
 
 ### Backgrounds
-- Primary Background:   #0D0D0D  (near-black — base for all tools)
-- Secondary Background: #1A1A1A  (slightly lighter dark — for cards/sections)
-- Surface / Card:       #222222  (elevated card backgrounds)
+- Primary Background:   #B4CFE4  (light blue — base for all tools)
+- Secondary Background: #476C89  (medium blue — cards, secondary surfaces)
+- Surface / Card:       #18476B  (dark blue — primary result boxes, elevated cards)
 
 ### Brand Accents
-- Yellow (Primary CTA): #E8FF00  (electric yellow — buttons, highlights, results)
-- Purple (Secondary):   #7B3FE4  (vibrant purple — cards, headers, badges)
-- Green (Positive):     #39FF14  (neon green — positive results, gains)
+- Yellow (Primary CTA): #E8FF00  (electric yellow — buttons, highlights)
+- Green (Positive):     #39FF14  (neon green — positive results, affordable)
+- Red (Negative):       #FF3B3B  (red — over budget, unaffordable)
 
 ### Text
-- Primary Text:         #FFFFFF  (white — headings and body on dark bg)
-- Secondary / Muted:    #E8E8E8  (light grey — labels, helper text)
-- Dark Text:            #0D0D0D  (black — text placed on yellow or green bg)
+- Primary Text:         #18476B  (dark blue — body text on light blue background)
+- Headers / Labels:     #FFFFFF  (white — section titles, input labels)
+- Text on Yellow:       #0D0D0D  (black — text placed on yellow button)
+- Text on Dark Blue:    #FFFFFF  (white — text inside dark blue result boxes)
+- Text on Medium Blue:  #FFFFFF  (white — text inside medium blue secondary boxes)
 
 ### Semantic Colors
 - Positive / Good:      #39FF14  (green — affordable, within budget)
@@ -39,16 +41,17 @@ Sharp, elegant edges — modern and confident, never bubbly or soft.
 
 ### Scale
 - Hero / Display:   900 weight, 3rem+    (large title text)
-- Section Header:   700 weight, 1.75rem  (tool title, section names)
-- Label / Input:    600 weight, 1rem     (input field labels)
-- Body / Helper:    400 weight, 0.95rem  (descriptions, helper text)
-- Result Output:    700 weight, 2rem+    (calculated result numbers)
+- Section Header:   700 weight, 1.75rem  (tool title, section names) — WHITE
+- Label / Input:    600 weight, 1rem     (input field labels) — WHITE
+- Body / Helper:    400 weight, 0.95rem  (descriptions, helper text) — DARK BLUE
+- Result Output:    700 weight, 2rem+    (calculated result numbers) — WHITE
 
 ### Text on Color Rules
-- On #0D0D0D background — use #FFFFFF or #E8FF00
-- On #7B3FE4 purple      — use #E8FF00 or #FFFFFF
-- On #E8FF00 yellow      — use #0D0D0D (always dark text)
-- On #39FF14 green       — use #0D0D0D (always dark text)
+- On #B4CFE4 light blue  — use #18476B (dark blue) for body text
+- On #18476B dark blue   — use #FFFFFF (white)
+- On #476C89 medium blue — use #FFFFFF (white)
+- On #E8FF00 yellow      — use #0D0D0D (black — always)
+- On #39FF14 green       — use #0D0D0D (black — always)
 
 ---
 
@@ -82,36 +85,43 @@ Sharp, elegant edges — modern and confident, never bubbly or soft.
 - NOT full width on mobile — generous horizontal padding creates breathing room
 
 ### Input Fields
-- Background:     #1A1A1A
-- Border:         1px solid #333333
-- Focus border:   1px solid #7B3FE4
-- Text:           #FFFFFF
-- Label:          #E8E8E8, 600 weight
+- Background:     #FFFFFF  (white — clean contrast against light blue page)
+- Border:         1px solid #476C89
+- Focus border:   1px solid #18476B
+- Text:           #18476B
+- Label:          #FFFFFF, 600 weight
 - Border-radius:  8px
 - Padding:        14px 16px
 
-### Result / Output Box
-- Background:     #7B3FE4 (purple) OR #E8FF00 (yellow for standout results)
-- Text:           #FFFFFF on purple / #0D0D0D on yellow
-- Font:           700 weight, 1.75–2.5rem for the key number
+### Primary Result Box (Featured Number)
+- Background:     #18476B  (dark blue)
+- Text:           #FFFFFF
+- Number color:   #E8FF00  (yellow — makes the key figure pop)
 - Border-radius:  10px
-- Padding:        24px
+- Padding:        28px
+- Alignment:      centered
 
-### Cards
-- Background:     #222222
-- Border:         1px solid #333333
+### Secondary Result Boxes
+- Background:     #476C89  (medium blue)
+- Text:           #FFFFFF
+- Border-radius:  10px
+- Padding:        20px
+
+### Input Section Card
+- Background:     #18476B  (dark blue — groups inputs clearly against light bg)
+- Border:         none
 - Border-radius:  12px
 - Padding:        28px
-- Box-shadow:     0 4px 24px rgba(0, 0, 0, 0.4)
+- Box-shadow:     0 4px 24px rgba(24, 71, 107, 0.2)
 
 ### Section Dividers
-- Use a 1px solid #2A2A2A horizontal rule after every section header
+- Use a 1px solid rgba(24,71,107,0.3) horizontal rule after every section header
 - 8px spacing between the header and the rule
 - 12px spacing between the rule and the content below
 - 40px spacing above each new section
 - HTML pattern:
   <h2>Section Title</h2>
-  <hr style="border:none; border-top:1px solid #2A2A2A; margin:8px 0 12px 0;">
+  <hr style="border:none; border-top:1px solid rgba(24,71,107,0.3); margin:8px 0 12px 0;">
   [content]
 
 ---
@@ -128,12 +138,12 @@ Sharp, elegant edges — modern and confident, never bubbly or soft.
 ---
 
 ## Aesthetic Rules
-- Always dark background — never white or light grey base
+- Light blue base creates a clean, professional, trustworthy feel
+- Dark navy cards and result boxes create depth and hierarchy
 - Electric yellow is reserved for the ONE most important action per page
-- Purple signals interactivity and brand identity
-- Green signals a positive financial outcome
-- Red signals a negative or over-budget result
+- Green = good financial outcome, Red = bad financial outcome
 - Sharp 8px radius on buttons — elegant and confident, never bubbly
 - Typography is bold and large — numbers should feel powerful
 - Less is more — no clutter, no decoration for decoration's sake
 - Section dividers use both a visible line AND spacing for clear hierarchy
+- White text on all blue surfaces — never dark text on dark backgrounds
